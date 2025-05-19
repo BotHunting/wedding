@@ -51,7 +51,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title light-background" style="background: #fff0f6;">
+    <div class="page-title light-background position-relative">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0" style="font-family: 'Great Vibes', cursive; color: #a0527a;">Galeri Momen Bahagia</h1>
         <nav class="breadcrumbs">
@@ -70,17 +70,26 @@
           <?php
           // Daftar gambar galeri
           $gallery = [
-            1,2,3,4,5,6,7,8
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
           ];
-          foreach($gallery as $num): ?>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100 rounded-4 shadow-sm" style="background:#fff;">
-              <img src="assets/img/gallery/gallery-<?php echo $num; ?>.jpg" class="img-fluid rounded-4" alt="Gallery <?php echo $num; ?>">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-<?php echo $num; ?>.jpg" title="Gallery <?php echo $num; ?>" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+          foreach ($gallery as $num): ?>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100 rounded-4 shadow-sm" style="background:#fff;">
+                <img src="assets/img/gallery/gallery-<?php echo $num; ?>.jpg" class="img-fluid rounded-4"
+                  alt="Gallery <?php echo $num; ?>">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/gallery-<?php echo $num; ?>.jpg" title="Gallery <?php echo $num; ?>"
+                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                </div>
               </div>
             </div>
-          </div>
           <?php endforeach; ?>
         </div>
       </div>
@@ -91,7 +100,8 @@
       <div class="row justify-content-center g-4">
         <div class="col-12 text-center mb-4">
           <h2 style="font-family:'Great Vibes',cursive; color:#a0527a; font-size:2.2rem;">Prawed &amp; Streaming</h2>
-          <p class="text-secondary" style="font-family:'Montserrat',sans-serif;">Saksikan video prewedding dan live streaming TikTok acara kami di bawah ini.</p>
+          <p class="text-secondary" style="font-family:'Montserrat',sans-serif;">Saksikan video prewedding dan live
+            streaming TikTok acara kami di bawah ini.</p>
         </div>
         <div class="col-12 col-lg-6">
           <div class="video-container mb-3">
@@ -129,6 +139,11 @@
     <!-- Sosial Media Embed Section -->
     <section id="sosmed-embed" class="container my-5">
       <div class="row justify-content-center g-4">
+        <div class="col-12 text-center mb-4">
+          <h2 style="font-family:'Great Vibes',cursive; color:#a0527a; font-size:2.2rem;">Sosmed Kami</h2>
+          <p class="text-secondary" style="font-family:'Montserrat',sans-serif;">Yuk nambah relasi, sapa tau bisa bangun
+            bisnis!!</p>
+        </div>
         <div class="col-12 col-md-6">
           <div class="video-container">
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/bot.hunting/"
@@ -164,7 +179,8 @@
   <?php include 'footer.php'; ?>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -180,4 +196,5 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

@@ -126,7 +126,7 @@
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="contact.php" class="stretched-link">
                 <h3>Ceremony</h3>
               </a>
               <p>Join us for our wedding ceremony filled with love and joy.</p>
@@ -138,7 +138,7 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="events.php" class="stretched-link">
                 <h3>Reception</h3>
               </a>
               <p>Celebrate with us at the reception with food, music, and dancing.</p>
@@ -150,7 +150,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="gallery.php" class="stretched-link">
                 <h3>Pre-Wedding Events</h3>
               </a>
               <p>Join us for various pre-wedding events leading up to the big day.</p>

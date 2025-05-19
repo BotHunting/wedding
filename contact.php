@@ -47,7 +47,7 @@
     <!-- Page Title -->
     <div class="page-title light-background position-relative">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Contact</h1>
+        <h1 class="mb-2 mb-lg-0" style="font-family:'Great Vibes',cursive;color:#a0527a;">Contact</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.php">Home</a></li>
