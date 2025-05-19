@@ -1,55 +1,68 @@
-# 💍 Wedding Invitation - Zubed & Nadia
+<h1 align="center">💍 Wedding Invitation<br>Zubed & Nadia</h1>
 
-[![GitHub license](https://img.shields.io/github/license/BotHunting/wedding?style=flat-square)](./LICENSE)
-![Made with HTML, CSS, JS](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange?style=flat-square)
-![Responsive](https://img.shields.io/badge/responsive-yes-brightgreen?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/github/license/BotHunting/wedding?style=flat-square" alt="License"/>
+  <img src="https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange?style=flat-square" alt="Tech"/>
+  <img src="https://img.shields.io/badge/responsive-yes-brightgreen?style=flat-square" alt="Responsive"/>
+</p>
 
-🎉 Proyek ini adalah **Undangan Digital Pernikahan** dengan desain yang estetik, interaktif, dan responsif. Dibuat dengan penuh cinta (dan sedikit ngoding), buat pasangan yang ingin tampil beda di hari bahagianya 💖
+<p align="center">
+  <b>Undangan Digital Pernikahan</b> dengan desain <i>estetik</i>, interaktif, dan responsif.<br>
+  Dibuat penuh cinta untuk pasangan yang ingin tampil beda di hari bahagianya. 💖
+</p>
+
+---
 
 ## 🌸 Fitur Utama
 
-- ✅ Halaman undangan dengan tema elegan & modern
-- ✅ Tanggal & waktu akad resepsi
-- ✅ Lokasi Google Maps terintegrasi
-- ✅ Galeri foto pasangan
-- ✅ Buku tamu (RSVP) otomatis via Google Apps Script
-- ✅ Responsif di semua device (HP, tablet, laptop)
-- ✅ Animasi smooth & efek kece
+- ✨ Tema elegan & modern, cocok untuk generasi kekinian
+- 📅 Tanggal & waktu akad/resepsi yang jelas
+- 📍 Lokasi Google Maps terintegrasi
+- 🖼️ Galeri foto kenangan
+- 📝 Buku tamu (RSVP) otomatis via Google Apps Script
+- 📱 100% responsif di semua device
+- 🎬 Animasi smooth & efek kece
+
+---
 
 ## 🧠 Teknologi yang Digunakan
 
-- HTML5
-- CSS3 + Animasi & AOS
-- JavaScript
+- HTML5, CSS3 (AOS Animation), JavaScript
 - Google Apps Script (untuk RSVP)
 - [AOS Library](https://michalsnik.github.io/aos/) (Animate On Scroll)
 - Google Fonts
 
-## 🖼️ Screenshot
+---
+
+## 🖼️ Preview
 
 | Tampilan | Deskripsi |
-|---------|-----------|
+|----------|-----------|
 | ![Home](https://github.com/BotHunting/wedding/assets/placeholder/home.png) | Halaman pembuka undangan |
 | ![Gallery](https://github.com/BotHunting/wedding/assets/placeholder/gallery.png) | Galeri foto pasangan |
 | ![RSVP](https://github.com/BotHunting/wedding/assets/placeholder/rsvp.png) | Formulir RSVP interaktif |
 
-> *Note: Ganti link gambar di atas sesuai repo kamu ya bro!*
+> *Note: Ganti link gambar di atas sesuai repo kamu!*
+
+---
 
 ## 🚀 Cara Menjalankan (Lokal)
 
-1. Clone repo ini:
+1. **Clone repo ini:**
    ```bash
    git clone https://github.com/BotHunting/wedding.git
    cd wedding
+   ```
 2. **Jalankan di server lokal** (PHP Apache/Nginx):
-- Pastikan `index.php`, `submit.php`, `rsvp_proxy.php` bisa diakses.
-- Buat folder `images/` dan masukkan beberapa foto.
-3. **Configure Apps Script**:
-- Buat Google Sheets baru, tambahkan sheet `komen` atau `RSVP`.
-- Buka **Extensions > Apps Script**, paste `script/Code.gs`.
-- Deploy sebagai Web App, izinkan **Anyone**.
-- Ganti URL di `submit.php` & `rsvp_proxy.php` sesuai deployment.
-4. **Buka di browser**: `http://localhost/path-to-wedding/index.php`
+   - Pastikan `index.php`, `submit.php`, `rsvp_proxy.php` bisa diakses.
+   - Buat folder `images/` dan masukkan beberapa foto.
+3. **Konfigurasi Apps Script:**
+   - Buat Google Sheets baru, tambahkan sheet `komen` atau `RSVP`.
+   - Buka **Extensions > Apps Script**, paste `script/Code.gs`.
+   - Deploy sebagai Web App, izinkan **Anyone**.
+   - Ganti URL di `submit.php` & `rsvp_proxy.php` sesuai deployment.
+4. **Buka di browser:**  
+   `http://localhost/path-to-wedding/index.php`
 
 ---
 
@@ -79,4 +92,6 @@ Lisensi MIT – lihat [LICENSE](LICENSE) untuk detail.
 
 ---
 
-> Dibuat dengan ❤️ oleh **Zubed**, versi digital cinta yang #TooGenZ untuk cuma kertas.
+<p align="center">
+  Dibuat dengan <span style="color:#e9b384;">&#10084;</span> oleh <b>Zubed</b>, versi digital cinta yang #TooGenZ untuk cuma kertas.
+</p>
