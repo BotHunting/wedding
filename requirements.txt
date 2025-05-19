@@ -1,0 +1,10 @@
+# Web Server
+php >= 7.4.0
+
+# Development Tools
+composer
+npm
+
+# Optional Tools
+node >= 14.0.0
+git
