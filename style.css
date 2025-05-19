@@ -280,6 +280,49 @@ section h2 {
   box-shadow: 0 2px 12px #e9b38433;
 }
 
+/* Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%; /* 16:9 Aspect Ratio for landscape videos */
+    background: var(--secondary);
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container .tiktok-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    background: #fff;
+}
+
+/* Portrait Mode for Mobile */
+@media (max-width: 767.98px) {
+    .video-container {
+        padding-top: 177.78%; /* Keep 16:9 on mobile */
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .video-container {
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+}
+
+/* Video Wrapper Shadows */
+.video-container iframe,
+.video-container .tiktok-embed {
+    box-shadow: 0 4px 24px rgba(233,179,132,0.15);
+}
+
 /* Gift Section */
 .gift {
   text-align: center;

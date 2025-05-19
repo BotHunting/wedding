@@ -1,97 +1,60 @@
-<h1 align="center">💍 Wedding Invitation<br>Zubed & Nadia</h1>
+# Wedding Website for Faris and Nadia
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/BotHunting/wedding?style=flat-square" alt="License"/>
-  <img src="https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange?style=flat-square" alt="Tech"/>
-  <img src="https://img.shields.io/badge/responsive-yes-brightgreen?style=flat-square" alt="Responsive"/>
-</p>
+This project is a wedding website dedicated to celebrating the union of Faris and Nadia. It provides information about their love story, wedding events, a gallery of memories, and a way for guests to get in touch.
 
-<p align="center">
-  <b>Undangan Digital Pernikahan</b> dengan desain <i>estetik</i>, interaktif, dan responsif.<br>
-  Dibuat penuh cinta untuk pasangan yang ingin tampil beda di hari bahagianya. 💖
-</p>
+## Project Structure
 
----
+```
+wedding-website
+├── assets
+│   ├── css
+│   │   └── main.css
+│   ├── js
+│   │   └── main.js
+│   ├── vendor
+│   │   ├── aos
+│   │   ├── bootstrap
+│   │   ├── bootstrap-icons
+│   │   ├── glightbox
+│   │   ├── php-email-form
+│   │   └── swiper
+│   └── img
+│       ├── favicon.png
+│       ├── apple-touch-icon.png
+│       ├── about.jpg
+│       ├── hero-carousel
+│       └── recent-photos
+├── index.html
+├── our-story.html
+├── events.html
+├── gallery.html
+├── blog.html
+├── contact.html
+└── README.md
+```
 
-## 🌸 Fitur Utama
+## Features
 
-- ✨ Tema elegan & modern, cocok untuk generasi kekinian
-- 📅 Tanggal & waktu akad/resepsi yang jelas
-- 📍 Lokasi Google Maps terintegrasi
-- 🖼️ Galeri foto kenangan
-- 📝 Buku tamu (RSVP) otomatis via Google Apps Script
-- 📱 100% responsif di semua device
-- 🎬 Animasi smooth & efek kece
+- **Homepage (index.html)**: A beautifully designed homepage featuring a hero image, sections about the couple, their journey, and recent photos.
+- **Our Story (our-story.html)**: A detailed account of how Faris and Nadia met, their journey together, and significant milestones.
+- **Events (events.html)**: A comprehensive list of wedding events, including dates, times, and locations for the ceremony and reception.
+- **Gallery (gallery.html)**: A visually appealing gallery showcasing photos from the wedding and related events.
+- **Blog (blog.html)**: Updates and stories related to the wedding planning process and experiences from the couple.
+- **Contact (contact.html)**: A contact form and additional information for guests to reach out to Faris and Nadia or their wedding planners.
 
----
+## Setup Instructions
 
-## 🧠 Teknologi yang Digunakan
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in your web browser to view the homepage.
+3. Customize the content in `our-story.html`, `events.html`, `gallery.html`, `blog.html`, and `contact.html` as needed.
+4. Update the images in the `assets/img` directory to reflect the wedding theme.
+5. Modify the styles in `assets/css/main.css` to match the chosen wedding colors and theme.
+6. Implement any necessary JavaScript functionality in `assets/js/main.js`.
 
-- HTML5, CSS3 (AOS Animation), JavaScript
-- Google Apps Script (untuk RSVP)
-- [AOS Library](https://michalsnik.github.io/aos/) (Animate On Scroll)
-- Google Fonts
+## Contributing
 
----
+Feel free to contribute by adding more features or improving the design. Pull requests are welcome!
 
-## 🖼️ Preview
+## License
 
-| Tampilan | Deskripsi |
-|----------|-----------|
-| ![Home](https://github.com/BotHunting/wedding/assets/placeholder/home.png) | Halaman pembuka undangan |
-| ![Gallery](https://github.com/BotHunting/wedding/assets/placeholder/gallery.png) | Galeri foto pasangan |
-| ![RSVP](https://github.com/BotHunting/wedding/assets/placeholder/rsvp.png) | Formulir RSVP interaktif |
-
-> *Note: Ganti link gambar di atas sesuai repo kamu!*
-
----
-
-## 🚀 Cara Menjalankan (Lokal)
-
-1. **Clone repo ini:**
-   ```bash
-   git clone https://github.com/BotHunting/wedding.git
-   cd wedding
-   ```
-2. **Jalankan di server lokal** (PHP Apache/Nginx):
-   - Pastikan `index.php`, `submit.php`, `rsvp_proxy.php` bisa diakses.
-   - Buat folder `images/` dan masukkan beberapa foto.
-3. **Konfigurasi Apps Script:**
-   - Buat Google Sheets baru, tambahkan sheet `komen` atau `RSVP`.
-   - Buka **Extensions > Apps Script**, paste `script/Code.gs`.
-   - Deploy sebagai Web App, izinkan **Anyone**.
-   - Ganti URL di `submit.php` & `rsvp_proxy.php` sesuai deployment.
-4. **Buka di browser:**  
-   `http://localhost/path-to-wedding/index.php`
-
----
-
-## 📸 Demo & Screenshot
-
-> Ganti placeholder ini dengan screenshot nyata dari `images/` atau link Live Demo.
-
-| Halaman Utama | Galeri Foto | RSVP List |
-|:-------------:|:-----------:|:---------:|
-| ![Home Placeholder](https://via.placeholder.com/300x200) | ![Gallery Placeholder](https://via.placeholder.com/300x200) | ![RSVP Placeholder](https://via.placeholder.com/300x200) |
-
----
-
-## 🤝 Cara Kontribusi
-
-1. Fork repo ini 🔀
-2. Buat branch baru (`git checkout -b fitur-xyz`)
-3. Commit perubahan kamu (`git commit -m "Tambah fitur XYZ"`)
-4. Push ke branch-mu (`git push origin fitur-xyz`)
-5. Buka Pull Request 🚀
-
----
-
-## 📜 Lisensi
-
-Lisensi MIT – lihat [LICENSE](LICENSE) untuk detail.
-
----
-
-<p align="center">
-  Dibuat dengan <span style="color:#e9b384;">&#10084;</span> oleh <b>Zubed</b>, versi digital cinta yang #TooGenZ untuk cuma kertas.
-</p>
+This project is licensed under the MIT License.
