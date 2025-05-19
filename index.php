@@ -14,28 +14,20 @@
 
 <body>
     <!-- Overlay Undangan -->
-    <div id="invitation-overlay"
-        style="position:fixed;z-index:9999;inset:0;background:rgba(255,248,243,0.97);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-        <div
-            style="background:#fff8f3;border-radius:1.5rem;box-shadow:0 4px 24px #e9b38433;padding:2.5rem 2rem 2rem 2rem;max-width:90vw;">
-            <h2 style="font-family:'Great Vibes',cursive;color:#b48a78;font-size:2.5rem;margin-bottom:0.5rem;">Undangan
-                Pernikahan</h2>
-            <p style="font-size:1.15rem;color:#b48a78;margin-bottom:1.5rem;">Kepada Yth.<br>
-                <span id="guest-name"
-                    style="font-size:1.3rem;font-weight:600;color:#e9b384;display:inline-block;margin-top:0.3rem;"></span>
+    <div id="invitation-overlay" class="overlay-genz">
+        <div class="overlay-card-genz">
+            <h2>Undangan Pernikahan</h2>
+            <p>Kepada Yth.<br>
+                <span id="guest-name"></span>
             </p>
-            <button id="open-invitation-btn"
-                style="background:linear-gradient(90deg,#e9b384 60%,#b48a78 100%);color:#fff;padding:0.8rem 2.5rem;border:none;border-radius:1rem;font-size:1.1rem;font-weight:600;box-shadow:0 2px 12px #e9b38433;cursor:pointer;transition:background 0.2s,transform 0.2s;">
-                Buka Undangan
-            </button>
+            <button id="open-invitation-btn" class="btn-genz">Buka Undangan</button>
         </div>
     </div>
 
     <!-- Background Music -->
     <audio id="bg-music" src="marry-you.weba" autoplay loop preload="auto"></audio>
-    <button id="music-toggle" aria-label="Toggle Music"
-        style="position:fixed;bottom:24px;right:24px;z-index:99;background:#fff8f3;border:none;border-radius:50%;box-shadow:0 2px 8px #e9b38455;padding:14px;cursor:pointer;transition:background 0.2s;">
-        <i id="music-icon" class="fa fa-volume-up" style="color:#b48a78;font-size:1.3rem;"></i>
+    <button id="music-toggle" aria-label="Toggle Music" class="btn-music-genz">
+        <i id="music-icon" class="fa fa-volume-up"></i>
     </button>
 
     <!-- Navbar -->
@@ -70,17 +62,16 @@
             <img src="images/couple.jpg" alt="Zubed dan Nadia" class="story-img" />
             <div>
                 <p>
-                    Semua berawal dari obrolan santai dan perkenalan yang sederhana. <span class="highlight">Zubed &
-                        Nadia</span> bukan tipe pasangan yang langsung klik dari awal, tapi perlahan saling mengenal,
-                    saling menghargai, dan akhirnya tumbuh rasa yang tulus.
-                    Perjalanan ini mungkin nggak penuh drama, tapi justru itulah yang bikin semuanya terasa nyata dan
-                    istimewa. Sekarang kami siap melangkah bersama, membangun masa depan dengan niat baik dan hati yang
-                    tenang.
+                    Kami nggak langsung dekat dari awal. Bahkan, awal-awal cuma ngobrol ala kadarnya—kayak langganan
+                    <i>chat Senin-Kamis</i>, itu pun kadang pending dibales 😅. Tapi ternyata, dari obrolan ringan itu
+                    tumbuh rasa nyaman yang pelan-pelan jadi serius.
+                    <span class="highlight">Zubed & Nadia</span> belajar mengenal satu sama lain dengan cara sederhana:
+                    jadi diri sendiri, nggak buru-buru, dan banyak becandanya. Dari yang awalnya iseng nyapa, eh
+                    sekarang malah siap bareng-bareng ke jenjang yang lebih serius. Siapa sangka, ya? 😄
                 </p>
             </div>
         </div>
     </section>
-
 
     <!-- Gallery -->
     <section id="gallery" data-aos="fade-left">
@@ -111,7 +102,7 @@
             <div class="gift-card">
                 <i class="fa fa-university"></i>
                 <p>Rekening BCA: <strong id="accNumber">1234567890</strong></p>
-                <button id="copyBtn" onclick="copyAcc()"><i class="fa fa-copy"></i> Salin</button>
+                <button id="copyBtn" class="btn-genz" onclick="copyAcc()"><i class="fa fa-copy"></i> Salin</button>
             </div>
             <p>
                 <script type='text/javascript'
@@ -119,10 +110,8 @@
                 <script type='text/javascript'
                     class='troverlay'>(function () { var trbtnId = trbtnOverlay.init('Dompet Digital', '#2196F3', 'https://trakteer.id/hunty/tip/embed/modal', 'https://trakteer.id/images/mix/coffee.png', '40', 'inline'); trbtnOverlay.draw(trbtnId); })();</script>
             </p>
-
             <small class="gift-note">Terima kasih atas doa, restu, dan kehadiran Bapak/Ibu/Saudara/i yang menjadi bagian
-                dari
-                kebahagiaan kami <span style="color:#e9b384;">&#10084;</span></small>
+                dari kebahagiaan kami <span style="color:#e9b384;">&#10084;</span></small>
         </div>
     </section>
 
@@ -130,16 +119,15 @@
     <section id="location" data-aos="fade-up">
         <h2>Lokasi Acara</h2>
         <p class="location-text">Datang dan rayakan bersama kami di tempat yang penuh berkah ✨</p>
-        <div class="map-container" style="width:100%; height:400px; margin: 20px 0;">
+        <div class="map-container">
             <iframe title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d476.00655252569794!2d112.75114072813278!3d-7.291576234308819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTcnMjkuNyJTIDExMsKwNDUnMDQuNiJF!5e0!3m2!1sid!2sid!4v1747656519882!5m2!1sid!2sid"
                 width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <div class="btn-wrap" style="text-align:center;">
-            <a class="btn-map" href="https://maps.app.goo.gl/DXXG9sZsz8zgX3BS7" target="_blank"
-                style="background:#e9b384; color:white; padding:12px 20px; border-radius:8px; text-decoration:none;">
+        <div class="btn-wrap">
+            <a class="btn-map btn-genz" href="https://maps.app.goo.gl/DXXG9sZsz8zgX3BS7" target="_blank">
                 <i class="fa fa-map-marked-alt"></i> Buka di Google Maps
             </a>
         </div>
@@ -151,15 +139,15 @@
         <div class="rsvp">
             <div id="rsvpMessage" class="hidden"></div>
             <form id="rsvpForm" onsubmit="sendWA(event)">
-                <input type="text" name="name" placeholder="Namamu" required />
-                <select name="attendance" required>
+                <input type="text" name="name" placeholder="Namamu" required class="input-genz" />
+                <select name="attendance" required class="input-genz">
                     <option value="">Konfirmasi Kehadiran</option>
                     <option value="Hadir">Hadir</option>
                     <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
-                <input type="number" name="guests" placeholder="Jumlah tamu" min="1" required />
-                <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)"></textarea>
-                <button type="submit"><i class="fa fa-paper-plane"></i> Kirim via WhatsApp</button>
+                <input type="number" name="guests" placeholder="Jumlah tamu" min="1" required class="input-genz" />
+                <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)" class="input-genz"></textarea>
+                <button type="submit" class="btn-genz"><i class="fa fa-paper-plane"></i> Kirim via WhatsApp</button>
             </form>
         </div>
     </section>
@@ -175,8 +163,6 @@
             <small>Terima kasih telah menjadi bagian dari hari bahagia kami</small>
         </span>
     </footer>
-
-
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -248,7 +234,6 @@
         const icon = document.getElementById('music-icon');
         let isPlaying = true;
 
-        // Langsung putar musik saat halaman dibuka (tanpa klik)
         window.addEventListener('DOMContentLoaded', () => {
             audio.volume = 0.7;
             audio.muted = false;
@@ -269,9 +254,14 @@
 
         // Overlay undangan logic
         function getGuestName() {
-            // Ambil nama dari parameter URL ?to=Nama%20Tamu, default "Tamu Undangan"
             const params = new URLSearchParams(window.location.search);
-            return params.get('to') ? decodeURIComponent(params.get('to').replace(/\+/g, ' ')) : 'Tamu Undangan';
+            let guest = params.get('to');
+            if (!guest) {
+                guest = prompt("Masukkan nama Anda:", "Tamu Undangan") || "Tamu Undangan";
+            } else {
+                guest = decodeURIComponent(guest.replace(/\+/g, ' '));
+            }
+            return guest;
         }
         document.getElementById('guest-name').textContent = getGuestName();
 
@@ -281,10 +271,8 @@
             overlay.style.opacity = '0';
             overlay.style.pointerEvents = 'none';
             setTimeout(() => overlay.style.display = 'none', 400);
-            // Musik langsung play saat undangan dibuka
             if (audio.paused) audio.play();
         };
-        // Optional: Disable scroll saat overlay tampil
         document.body.style.overflow = 'hidden';
         openBtn.addEventListener('click', () => {
             document.body.style.overflow = '';
