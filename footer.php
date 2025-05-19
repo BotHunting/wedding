@@ -11,8 +11,8 @@
       13 Juli 2025 &bull; Lamongan
     </div>
     <div class="social-links d-flex justify-content-center mb-3">
-      <a href="https://instagram.com/farisnadiawedding" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="mailto:farisnadiawedding@email.com"><i class="bi bi-envelope"></i></a>
+      <a href="https://flying-classy-sage.glitch.me/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:bot.hunting101@gmail.com"><i class="bi bi-envelope"></i></a>
     </div>
     <div class="copyright" style="color: #a0527a;">
       &copy; 2025 <strong class="px-1 sitename">Faris &amp; Nadia</strong> All Rights Reserved
