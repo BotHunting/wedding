@@ -58,13 +58,20 @@
     <!-- Story -->
     <section id="story" data-aos="fade-right">
         <h2>Perjalanan Kami</h2>
-        <div class="story-card">
-            <img src="images/couple.jpg" alt="Zubed dan Nadia" class="story-img" />
-            <div>
+        <div class="story-card story-card-genz">
+            <div class="story-img-wrap">
+                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/Faris%20Jaz.jpg?v=1747660644198" alt="Zubed" class="story-img" />
+                <p class="story-img-caption">Zubed</p>
+            </div>
+            <div class="story-img-wrap">
+                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/nadya.png?v=1747660927406" alt="Nadia" class="story-img" />
+                <p class="story-img-caption">Nadia</p>
+            </div>
+            <div class="story-text">
                 <p>
                     Kami nggak langsung dekat dari awal. Bahkan, awal-awal cuma ngobrol ala kadarnya—kayak langganan
                     <i>chat Senin-Kamis</i>, itu pun kadang pending dibales 😅. Tapi ternyata, dari obrolan ringan itu
-                    tumbuh rasa nyaman yang pelan-pelan jadi serius.
+                    tumbuh rasa nyaman yang pelan-pelan jadi serius.<br>
                     <span class="highlight">Zubed & Nadia</span> belajar mengenal satu sama lain dengan cara sederhana:
                     jadi diri sendiri, nggak buru-buru, dan banyak becandanya. Dari yang awalnya iseng nyapa, eh
                     sekarang malah siap bareng-bareng ke jenjang yang lebih serius. Siapa sangka, ya? 😄
@@ -101,7 +108,7 @@
         <div class="gift">
             <div class="gift-card">
                 <i class="fa fa-university"></i>
-                <p>Rekening BCA: <strong id="accNumber">1234567890</strong></p>
+                <p>Rekening BNI: <strong id="accNumber">1348542066</strong></p>
                 <button id="copyBtn" class="btn-genz" onclick="copyAcc()"><i class="fa fa-copy"></i> Salin</button>
             </div>
             <p>
@@ -121,13 +128,13 @@
         <p class="location-text">Datang dan rayakan bersama kami di tempat yang penuh berkah ✨</p>
         <div class="map-container">
             <iframe title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d476.00655252569794!2d112.75114072813278!3d-7.291576234308819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTcnMjkuNyJTIDExMsKwNDUnMDQuNiJF!5e0!3m2!1sid!2sid!4v1747656519882!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7211723385142!2d112.42495446961121!3d-7.13933096884685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77f75ef076a107%3A0x1d55735c674a82f3!2sJl.%20Jupiter%2011%20No.8%2C%20Tambakboyo%2C%20Tambakrigadung%2C%20Kec.%20Tikung%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur%2062281!5e0!3m2!1sid!2sid!4v1747661830656!5m2!1sid!2sid"
                 width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
         <div class="btn-wrap">
-            <a class="btn-map btn-genz" href="https://maps.app.goo.gl/DXXG9sZsz8zgX3BS7" target="_blank">
+            <a class="btn-map btn-genz" href="https://maps.app.goo.gl/34XBTgw2gFxbAGFw9" target="_blank">
                 <i class="fa fa-map-marked-alt"></i> Buka di Google Maps
             </a>
         </div>
