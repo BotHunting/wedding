@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-size: 1rem;
 }
 
 /* Navigation */
@@ -90,7 +91,6 @@ header h1 {
 .hero-section {
   text-align: center;
   padding: 4.5rem 1rem 2.5rem 1rem;
-  background: linear-gradient(120deg, #fff8f3 60%, #fbeee6 100%);
   border-radius: 0 0 2.5rem 2.5rem;
   margin-bottom: 2.5rem;
   position: relative;
@@ -243,55 +243,21 @@ section h2 {
   align-self: center;
 }
 
-@media (max-width: 900px) {
-  .gallery-item img { width: 140px; height: 140px; }
-  .story-card { flex-direction: column; gap: 1rem; padding: 1.2rem; }
-  .story-img { width: 120px; height: 120px; }
-  .story-card-genz { flex-direction: column; gap: 1.2rem; padding: 1.2rem; }
-  .story-img { width: 110px; height: 110px; }
+.tiktok-live-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 1rem;
-    gap: 1rem;
-  }
-  nav a {
-    font-size: 0.8rem;
-  }
-  header h1 {
-    font-size: 3rem;
-  }
-  section {
-    padding: 4rem 1rem;
-  }
-  .countdown {
-    gap: 0.5rem;
-  }
-  .countdown div {
-    min-width: 60px;
-  }
-  .countdown span {
-    font-size: 1.5rem;
-  }
+.tiktok-embed {
+  width: 100% !important;
+  max-width: 360px !important;
+  min-width: 220px !important;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #e9b38433;
+  background: #fff;
 }
 
-@media (max-width: 600px) {
-  section { padding: 1.2rem 0.5rem; }
-  .gallery-item img { width: 100px; height: 100px; }
-  .countdown { gap: 0.7rem; }
-  .countdown div { padding: 0.7rem 0.7rem; min-width: 45px; }
-  .story-card { flex-direction: column; gap: 0.7rem; text-align: center; }
-  .hero-title { font-size: 2.1rem; }
-  .subtitle { font-size: 1.05rem; }
-  nav { gap: 0.3rem; font-size: 0.95rem; }
-  .gallery { gap: 0.5rem; }
-  .gallery-item img { width: 90vw; height: 38vw; min-width: 120px; min-height: 80px; }
-  .map-container { height: 220px; }
-  .footer-flower { height: 24px; }
-}
-
-/* Video */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -305,6 +271,13 @@ section h2 {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   border-radius: 1rem;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  box-shadow: 0 2px 12px #e9b38433;
 }
 
 /* Gift Section */
@@ -726,10 +699,10 @@ button:hover,
 /* Responsive Design */
 @media (max-width: 900px) {
   .gallery-item img { width: 140px; height: 140px; }
-  .story-card { flex-direction: column; gap: 1rem; padding: 1.2rem; }
-  .story-img { width: 120px; height: 120px; }
   .story-card-genz { flex-direction: column; gap: 1.2rem; padding: 1.2rem; }
   .story-img { width: 110px; height: 110px; }
+  .video-wrapper iframe { max-width: 98vw; height: 45vw; min-height: 180px; }
+  .tiktok-embed { max-width: 98vw !important; }
 }
 
 @media (max-width: 768px) {
@@ -758,16 +731,15 @@ button:hover,
 }
 
 @media (max-width: 600px) {
-  section { padding: 1.2rem 0.5rem; }
-  .gallery-item img { width: 100px; height: 100px; }
-  .countdown { gap: 0.7rem; }
-  .countdown div { padding: 0.7rem 0.7rem; min-width: 45px; }
-  .story-card { flex-direction: column; gap: 0.7rem; text-align: center; }
   .hero-title { font-size: 2.1rem; }
   .subtitle { font-size: 1.05rem; }
   nav { gap: 0.3rem; font-size: 0.95rem; }
   .gallery { gap: 0.5rem; }
-  .gallery-item img { width: 90vw; height: 38vw; min-width: 120px; min-height: 80px; }
+  .gallery-item img { width: 98vw; height: 38vw; min-width: 120px; min-height: 80px; }
   .map-container { height: 220px; }
   .footer-flower { height: 24px; }
+  .video-wrapper iframe { height: 42vw; min-height: 160px; }
+  .tiktok-embed { min-width: 98vw !important; }
+  .story-img { width: 90px; height: 90px; }
+  .story-text { max-width: 98vw; }
 }

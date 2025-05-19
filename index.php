@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wedding Zubed & Nadia</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>💍</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>💍</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -32,14 +34,46 @@
     </button>
 
     <!-- Navbar -->
-    <nav data-aos="fade-down">
-        <a href="#home"><i class="fa fa-home"></i> Home</a>
-        <a href="#story"><i class="fa fa-heart"></i> Tentang Kami</a>
-        <a href="#gallery"><i class="fa fa-image"></i> Moment</a>
-        <a href="#video"><i class="fa fa-film"></i> Video</a>
-        <a href="#gift"><i class="fa fa-gift"></i> Amplop</a>
-        <a href="#location"><i class="fa fa-map-marker-alt"></i> Lokasi</a>
-        <a href="#rsvp"><i class="fa fa-envelope"></i> RSVP</a>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm rounded-bottom-4 sticky-top" data-aos="fade-down">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fa fa-heart text-danger"></i> Zubed & Nadia
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#home"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#story"><i class="fa fa-heart"></i> Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#gallery"><i class="fa fa-image"></i> Moment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#video"><i class="fa fa-film"></i> Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#gift"><i class="fa fa-gift"></i> Amplop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#location"><i class="fa fa-map-marker-alt"></i> Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#rsvp"><i class="fa fa-envelope"></i> RSVP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -51,7 +85,7 @@
                 <span class="and">&</span>
                 <span class="hero-nama">Nadia</span>
             </h1>
-            <p class="subtitle">Sabtu, 10 Juli 2025 &bull; Surabaya, Jawa Timur</p>
+            <p class="subtitle">Minggu, 13 Juli 2025 &bull; Lamongan, Jawa Timur</p>
         </div>
         <div class="hero-flower-bottom"></div>
     </header>
@@ -61,11 +95,13 @@
         <h2>Perjalanan Kami</h2>
         <div class="story-card story-card-genz">
             <div class="story-img-wrap">
-                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/Faris%20Jaz.jpg?v=1747660644198" alt="Zubed" class="story-img" />
+                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/Faris%20Jaz.jpg?v=1747660644198"
+                    alt="Zubed" class="story-img" />
                 <p class="story-img-caption">Zubed</p>
             </div>
             <div class="story-img-wrap">
-                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/nadya.png?v=1747660927406" alt="Nadia" class="story-img" />
+                <img src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/nadya.png?v=1747660927406"
+                    alt="Nadia" class="story-img" />
                 <p class="story-img-caption">Nadia</p>
             </div>
             <div class="story-text">
@@ -101,6 +137,19 @@
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
         </div>
+        <!-- TikTok Live Embed -->
+        <div class="tiktok-live-wrapper" style="margin-top:2rem;display:flex;justify-content:center;">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bot.hunting" data-unique-id="bot.hunting"
+                data-embed-from="embed_page" data-embed-type="creator" style="max: width 500px;px; min-width:288px;">
+                <section>
+                    <a target="_blank" href="https://www.tiktok.com/@bot.hunting?refer=creator_embed">@bot.hunting</a>
+                </section>
+            </blockquote>
+        </div>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+        <p style="text-align:center; color:#b48a78; font-size:1rem; margin-top:0.5rem;">
+            <i class="fab fa-tiktok"></i> Saksikan Live di TikTok: <b>@bot.hunting</b>
+        </p>
     </section>
 
     <!-- Gift -->
@@ -154,7 +203,8 @@
                     <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
                 <input type="number" name="guests" placeholder="Jumlah tamu" min="1" required class="input-genz" />
-                <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)" class="input-genz"></textarea>
+                <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)"
+                    class="input-genz"></textarea>
                 <button type="submit" class="btn-genz"><i class="fa fa-paper-plane"></i> Kirim via WhatsApp</button>
             </form>
         </div>
@@ -174,6 +224,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init({ duration: 900, once: true });
 
@@ -181,7 +232,7 @@
             document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        const weddingDate = new Date('2025-07-10T00:00:00').getTime();
+        const weddingDate = new Date('2025-07-13T00:00:00').getTime();
         const countdownEl = document.querySelector('.countdown');
         function updateCountdown() {
             const now = Date.now();
