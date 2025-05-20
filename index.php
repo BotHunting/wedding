@@ -157,7 +157,7 @@
         <?php endforeach; ?>
       </div>
     </div>
-  </section><!-- /Gallery Section -->
+  </section>
 
   <!-- Video & Live Stream Section -->
   <section id="video-embed" class="container my-5">
