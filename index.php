@@ -72,7 +72,7 @@
             <a class="nav-link rounded-3" href="#rsvp"><i class="fa fa-envelope"></i> RSVP</a>
           </li>
                     <li class="nav-item">
-            <a class="nav-link rounded-3" href="dashboard.php"><i class="fa fa-browser"></i> Versi Lengkap</a>
+            <a class="nav-link rounded-3" href="dashboard.php"><i class="fa fa-desktop"></i> Versi Lengkap</a>
           </li>
         </ul>
       </div>
