@@ -303,11 +303,11 @@
               <div id="rsvpMessage" class="hidden"></div>
               <form id="rsvpForm" onsubmit="sendWA(event)">
                 <input type="text" name="name" placeholder="Namamu" required class="input-genz form-control mb-2" />
-                <select name="attendance" required class="input-genz form-control mb-2">
+                <select name="attendance" id="attendance" required class="input-genz form-control mb-2" onchange="toggleGuestCount()">
                   <option value="Hadir">Hadir</option>
                   <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
-                <input type="number" name="guests" placeholder="Jumlah tamu" min="1" required
+                <input type="number" name="guests" id="guestCount" placeholder="Jumlah tamu" min="1" required
                   class="input-genz form-control mb-2" />
                 <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)"
                   class="input-genz form-control mb-3"></textarea>
@@ -320,6 +320,20 @@
         </div>
       </div>
       <script>
+        function toggleGuestCount() {
+          const attendance = document.getElementById('attendance');
+          const guestCount = document.getElementById('guestCount');
+          
+          if (attendance.value === 'Tidak Hadir') {
+            guestCount.value = '0';
+            guestCount.disabled = true;
+          } else {
+            guestCount.value = '';
+            guestCount.disabled = false;
+            guestCount.min = '1';
+          }
+        }
+
         function sendWA(e) {
           e.preventDefault();
           const form = document.getElementById('rsvpForm');
