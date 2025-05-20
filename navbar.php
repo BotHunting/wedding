@@ -9,7 +9,7 @@
   </ul>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
   <!-- Background Music Button & Audio -->
-  <audio id="bg-music" src="marry-you.mp3" autoplay loop preload="auto"></audio>
+  <audio id="bg-music" src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/marry-you.mp3?v=1747743840176" autoplay loop preload="auto"></audio>
   <button id="music-toggle" aria-label="Toggle Music" class="btn-music-genz"
     style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; background: #fff0f6; border: none; border-radius: 50%; width: 48px; height: 48px; box-shadow: 0 2px 8px #e5b6d1;">
     <i id="music-icon" class="bi bi-volume-up" style="font-size: 1.5rem; color: #a0527a;"></i>

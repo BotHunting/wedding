@@ -27,7 +27,7 @@
   </div>
 
   <!-- Background Music -->
-  <audio id="bg-music" src="marry-you.mp3" autoplay loop preload="auto"></audio>
+  <audio id="bg-music" src="https://cdn.glitch.global/acbb2462-e675-4bbe-9083-50441cd316fd/marry-you.mp3?v=1747743840176" autoplay loop preload="auto"></audio>
   <button id="music-toggle" aria-label="Toggle Music" class="btn-music-genz">
     <i id="music-icon" class="fa fa-volume-up"></i>
   </button>
@@ -71,7 +71,7 @@
             <a class="nav-link rounded-3" href="#rsvp"><i class="fa fa-envelope"></i> RSVP</a>
           </li>
                     <li class="nav-item">
-            <a class="nav-link rounded-3" href="dashboard.php"><i class="fa fa-desktop"></i> Versi Lengkap</a>
+            <a class="nav-link rounded-3" href="dashboard.php"><i class="fa fa-desktop"></i> Versi PC</a>
           </li>
         </ul>
       </div>
