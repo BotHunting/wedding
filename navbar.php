@@ -1,6 +1,6 @@
 <nav id="navmenu" class="navmenu">
   <ul>
-    <li><a href="index.php" class="active">Home</a></li>
+    <li><a href="dashboard.php" class="active">Home</a></li>
     <li><a href="our-story.php">Tentang Kami</a></li>
     <li><a href="gallery.php">Moment</a></li>
     <li><a href="events.php">Acara</a></li>
