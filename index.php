@@ -71,6 +71,9 @@
           <li class="nav-item">
             <a class="nav-link rounded-3" href="#rsvp"><i class="fa fa-envelope"></i> RSVP</a>
           </li>
+                    <li class="nav-item">
+            <a class="nav-link rounded-3" href="dashboard.php"><i class="fa fa-browser"></i> Versi Lengkap</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -288,16 +291,30 @@
       <div id="rsvpMessage" class="hidden"></div>
       <form id="rsvpForm" onsubmit="sendWA(event)">
         <input type="text" name="name" placeholder="Namamu" required class="input-genz" />
-        <select name="attendance" required class="input-genz">
+        <select name="attendance" required class="input-genz" onchange="handleAttendanceChange(this)">
           <option value="Hadir">Hadir</option>
           <option value="Tidak Hadir">Tidak Hadir</option>
         </select>
-        <input type="number" name="guests" placeholder="Jumlah tamu" min="1" required class="input-genz" />
+        <input type="number" name="guests" id="guestsInput" placeholder="Jumlah tamu" min="1" required class="input-genz" />
         <textarea name="message" placeholder="Ucapan atau pesan untuk kami (opsional)" class="input-genz"></textarea>
         <button type="submit" class="btn-genz"><i class="fa fa-paper-plane"></i> Kirim via WhatsApp</button>
       </form>
     </div>
   </section>
+
+<script>
+function handleAttendanceChange(selectElement) {
+  const guestsInput = document.getElementById('guestsInput');
+  if (selectElement.value === 'Tidak Hadir') {
+    guestsInput.value = 0;
+    guestsInput.disabled = true; // Optional: disable the input field
+  } else {
+    guestsInput.disabled = false; // Enable if "Hadir" is selected
+    // You might want to reset the value or ensure min="1" is respected here if needed
+  }
+}
+</script>
+
 
   <!-- Countdown -->
   <div class="countdown" data-aos="fade-up"></div>
@@ -364,10 +381,10 @@
 
       const waText =
         `Halo, saya ingin konfirmasi kehadiran untuk pernikahan:\n` +
-        `Nama: ${name}\n` +
-        `Kehadiran: ${attendance}\n` +
-        `Jumlah Tamu: ${guests}\n` +
-        (message ? `Pesan: ${message}` : '');
+        `📛 >> Nama: ${name}\n` +
+        `📍 >> Kehadiran: ${attendance}\n` +
+        `👥 >> Jumlah Tamu: ${guests}\n` +
+        (message ? `📝 >> Pesan: ${message}` : '');
 
       const waUrl = `https://wa.me/6281290320438?text=${encodeURIComponent(waText)}`;
       window.open(waUrl, '_blank');
