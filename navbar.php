@@ -1,11 +1,12 @@
 <nav id="navmenu" class="navmenu">
   <ul>
-    <li><a href="dashboard.php" class="active">Home</a></li>
+    <li><a href="index.php" class="active">Home</a></li>
     <li><a href="our-story.php">Tentang Kami</a></li>
     <li><a href="gallery.php">Moment</a></li>
     <li><a href="events.php">Acara</a></li>
     <li><a href="blog.php">Amplop</a></li>
     <li><a href="contact.php">Lokasi & RSVP</a></li>
+    <li><a href="https://ivy-lilac-rat.glitch.me/">Versi Lite</a></li>
   </ul>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
   <!-- Background Music Button & Audio -->
