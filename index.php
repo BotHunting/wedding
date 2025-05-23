@@ -36,7 +36,7 @@
   <nav class="navbar navbar-expand-lg bg-white shadow-sm rounded-bottom-4 sticky-top" data-aos="fade-down">
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand fw-bold" href="dashboard.php">
+      <a class="navbar-brand fw-bold" href="https://ivy-lilac-rat.glitch.me/">
         <i class="fa fa-heart text-danger"></i> Zubed & Nadia
       </a>
 
